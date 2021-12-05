@@ -1,6 +1,6 @@
 FROM node:16-alpine
 
-WORKDIR /home/hibara
+WORKDIR /home/sample_user
 
 RUN apk update && apk add bash
 

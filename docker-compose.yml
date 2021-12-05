@@ -2,12 +2,12 @@ version: "3"
 services:
   expo_sample:
     container_name: expo_sample
+    tty: true
     build: .
     volumes:
-      - .:/home/hibara
+      - .:/home/sample_user
     environment:
       - REACT_NATIVE_PACKAGER_HOSTNAME=${LOCAL_IP_ADDR}
-    command: yarn start
     ports:
       - "19000:19000"
       - "19001:19001"
